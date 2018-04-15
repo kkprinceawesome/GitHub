@@ -1,0 +1,89 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>indiasgrumpy</title>
+    <style>
+        body {
+            font-family: 'Mina', serif;
+            font-size: 16px;
+        }
+        input,button {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<h4>1st number</h4>
+<form>
+    <input type="text" name="firstname" id="a">
+    <div>
+        <div>
+            <h4>2nd number</h4>
+            <input type="text" name="firstnum" id="b">
+            <br>
+            <button type="button" onclick="algo()">Calculate</button>
+            <button type="reset" value = "reset">Reset</button>
+</form>
+<h4 id="DOM"></h4>
+<script>
+    function algo(){
+
+        var num1 = +document.getElementById("a").value,
+            num2 = +document.getElementById("b").value
+
+        if (num1 === num2){
+            document.getElementById('DOM').innerHTML = num1 +' is equal to '+num2;
+        }
+
+        if (num1>num2){
+            document.getElementById('DOM').innerHTML = num1+ ' is greater than ' + num2 + ' by ' + (num1-num2);
+        }
+        if (num1<num2){
+            document.getElementById('DOM').innerHTML = num2 + ' is greater than ' + num1 + ' by ' + (num2 - num1);
+        }
+    }
+
+    function reset(){
+
+    }
+</script>
+</body>
+</html>
+forming the greatest and smallest number (working on it)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>indiagrump</title>
+</head>
+<body>
+<form>
+    <h4>1st number</h4>
+    <input type="text" name="firstname" id="a">
+    <h4>Number of Numbers</h4>
+    <input type="text" name = 'firstnum' id="b"
+    <br>
+    <br>
+    <br>
+    <button type="button" onclick="algo()">Calculate</button>
+    <button type="reset" value = "reset">Reset</button>
+</form>
+<h4 id="DOM"></h4>
+<script>
+    //same variables, difference is in the values
+    var num1 = [];
+    var num1 =+document.getElementById("a").value
+    var num2 =+document.getElementById('b').value
+
+
+</script>
+</body>
+</html>
